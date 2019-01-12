@@ -1,0 +1,31 @@
+//Here we specify for each input/output its physical
+//location on the FPGA board.
+//The "DispSelect" ones correspond to the anodes
+//of the seven-segment display screens, and the 
+//"SevenSegValue" ones go to the individual segments.
+
+NET "clk" LOC = B8;
+
+# LCD control inputs
+NET "lcd_e" 	LOC = T18; 
+NET "lcd_rs" 	LOC = P17;
+NET "lcd_rw" 	LOC = R16;
+
+# The LCD four-bit data interface
+NET "lcd_4" 	LOC = T17;
+NET "lcd_5" 	LOC = R15;
+NET "lcd_6" 	LOC = R18;
+NET "lcd_7" 	LOC = M13;
+
+NET "switch_set_alarm" LOC = N17;
+NET "switch_set_time" LOC = R17;
+NET "switch_stopwatch" LOC = L13;
+NET "switch_timer" LOC = L14;
+NET "switch_set_timer" LOC = K17;
+NET "button_left" LOC = H13;
+NET "button_right" LOC = B18;
+NET "button_increase" LOC = D18;
+NET "button_decrease" LOC = E18;
+NET "switch_confirm" LOC = G18;
+NET "cancel_alarm" LOC = H18;
+NET "speaker_out" LOC = L15;
